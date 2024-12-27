@@ -1,0 +1,92 @@
+/* General styles for the chat container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    max-width: 600px; /* Max width for the chat */
+    margin: 0 auto; /* Center the chat container */
+    border: 1px solid #ccc; /* Light border around chat */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    max-height: 400px;
+}
+
+/* Header styles */
+.chat-header {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding around header */
+    text-align: center; /* Centered text */
+}
+
+/* Main chat area styles */
+.chat-history {
+    flex-grow: 1; /* Allow this area to grow */
+    padding: 10px; /* Padding inside chat area */
+    background-color: #f9f9f9; /* Light background */
+    overflow-y: auto; /* Scrollable if content exceeds height */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack messages vertically */
+}
+
+/* Individual chat message styles */
+.chat-history div {
+    display: flex; /* Flexbox for user and message */
+    align-items: center; /* Center vertically */
+    margin: 5px 0; /* Margin between messages */
+}
+
+/* Align user and bot messages */
+.blue {
+    background-color: #e1f5fe; /* Light blue background */
+    color: #0d47a1; /* Dark blue text */
+    align-self: flex-end; /* Align user messages to the right */
+    padding: 10px; /* Padding inside message box */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 75%; /* Limit the width of the messages */
+    word-wrap: break-word; /* Allow long words to break */
+}
+
+/* Styles for bot messages */
+.green {
+    background-color: #c8e6c9; /* Light green background */
+    color: #1b5e20; /* Dark green text */
+    align-self: flex-start; /* Align bot messages to the left */
+    padding: 10px; /* Padding inside message box */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 75%; /* Limit the width of the messages */
+    word-wrap: break-word; /* Allow long words to break */
+}
+
+/* Input footer styles */
+.chat-input {
+    display: flex; /* Flexbox for input and button */
+    padding: 10px; /* Padding around input area */
+    background-color: #fff; /* White background */
+    border-top: 1px solid #ccc; /* Top border */
+}
+
+/* Input field styles */
+#message-input {
+    flex-grow: 1; /* Input takes available space */
+    padding: 10px; /* Padding inside input */
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Button styles */
+#send-button {
+    margin-left: 10px; /* Space between input and button */
+    padding: 10px 15px; /* Padding for button */
+    background-color: #ff0404; /* Red background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+/* Button hover effect */
+#send-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

@@ -1,0 +1,108 @@
+[
+    {
+      "error_code": "DB_CONNECT_001",
+      "error_message": "Unable to connect to the database. Please check your connection settings and credentials.",
+      "solution": "Verify the database connection settings, including the hostname, port, username, and password. Ensure that the database server is reachable and operational."
+    },
+    {
+      "error_code": "DB_EXTRACT_001",
+      "error_message": "Failed to extract data from source. Ensure source is available and accessible.",
+      "solution": "Check the availability of the data source. Ensure that the source system is up and running and that you have the necessary permissions to access the data."
+    },
+    {
+      "error_code": "DB_EXTRACT_002",
+      "error_message": "Data extraction failed due to insufficient permissions on the source system.",
+      "solution": "Ensure that the credentials used for data extraction have the necessary permissions to access and extract the data. Update permissions if required."
+    },
+    {
+      "error_code": "DB_TRANSFORM_001",
+      "error_message": "Transformation script encountered a syntax error. Review the transformation logic.",
+      "solution": "Review the transformation script for syntax errors. Make sure that all expressions and statements are correctly written and valid."
+    },
+    {
+      "error_code": "DB_TRANSFORM_002",
+      "error_message": "Data transformation failed due to mismatched schema between source and target.",
+      "solution": "Verify that the schema of the source data matches the schema expected by the transformation logic. Adjust the schema as needed."
+    },
+    {
+      "error_code": "DB_TRANSFORM_003",
+      "error_message": "Data transformation timed out. Optimize the transformation logic or increase resources.",
+      "solution": "Optimize the transformation logic to improve performance. If the transformation requires more resources, consider increasing allocated resources."
+    },
+    {
+      "error_code": "DB_LOAD_001",
+      "error_message": "Failed to load data into the target system. Verify target system status and permissions.",
+      "solution": "Check the status of the target system and ensure that it is operational. Verify that you have the necessary permissions to load data into the target system."
+    },
+    {
+      "error_code": "DB_LOAD_002",
+      "error_message": "Data loading process was aborted due to data format inconsistencies.",
+      "solution": "Check for inconsistencies in the data format between the source and the target. Ensure that data is correctly formatted and meets the target system’s requirements."
+    },
+    {
+      "error_code": "DB_LOAD_003",
+      "error_message": "Loading data into the database failed due to constraints violations.",
+      "solution": "Review database constraints and ensure that the data being loaded complies with these constraints. Modify the data or constraints as needed."
+    },
+    {
+      "error_code": "NOTIFY_001",
+      "error_message": "Failed to send notification due to network issues",
+      "solution": "Check the configuration of the notification service and ensure it is correctly set up. Verify network connectivity and service availability."
+    },
+    {
+      "error_code": "NOTIFY_002",
+      "error_message": "Notification sending was aborted due to an invalid recipient address or format.",
+      "solution": "Verify that the recipient email addresses are correctly formatted and valid. Correct any invalid addresses and retry sending the notification."
+    },
+    {
+      "error_code": "NOTIFY_003",
+      "error_message": "Unable to connect to the notification service. Check service status and API keys.",
+      "solution": "Ensure that the notification service is up and running. Verify that API keys and credentials are correctly configured and valid."
+    },
+    {
+      "error_code": "REPORT_001",
+      "error_message": "Report generation failed due to missing or corrupt input data.",
+      "solution": "Check the input data for completeness and integrity. Ensure that all required data is available and not corrupted."
+    },
+    {
+      "error_code": "REPORT_002",
+      "error_message": "Report generation was aborted due to insufficient memory or system resources.",
+      "solution": "Increase the available system resources or memory. Optimize the report generation process to reduce resource consumption."
+    },
+    {
+      "error_code": "REPORT_003",
+      "error_message": "Report generation failed due to data format error",
+      "solution": "Verify that the data format is supported by the report generation tool. Correct any data format errors and ensure compatibility."
+    },
+    {
+      "error_code": "GENERIC_001",
+      "error_message": "Task failed due to an unexpected error. Check logs for detailed error information.",
+      "solution": "Review the task logs for detailed error information. Investigate the logs to identify the root cause of the unexpected error."
+    },
+    {
+      "error_code": "GENERIC_002",
+      "error_message": "Execution of the task was interrupted. Ensure that resources are properly allocated and retry.",
+      "solution": "Verify that sufficient resources are allocated for the task. Ensure that the task environment is stable and retry execution."
+    },
+    {
+      "error_code": "AUTH_001",
+      "error_message": "Authentication failed. Ensure correct credentials and access rights.",
+      "solution": "Check the credentials used for authentication and ensure they are correct. Verify that the account has the necessary access rights."
+    },
+    {
+      "error_code": "AUTH_002",
+      "error_message": "Authorization error. Verify user permissions for the requested operation.",
+      "solution": "Review the user permissions and ensure they are sufficient for the requested operation. Update permissions as necessary."
+    },
+    {
+      "error_code": "RESOURCE_001",
+      "error_message": "Task failed due to resource constraints. Increase the allocated resources or optimize the task.",
+      "solution": "Increase the resources allocated to the task. Alternatively, optimize the task to use fewer resources."
+    },
+    {
+      "error_code": "RESOURCE_002",
+      "error_message": "Execution halted because of exceeding resource limits. Consider scaling up your resources.",
+      "solution": "Review the resource limits and scale up resources if necessary. Ensure that resource allocation meets the requirements of the task."
+    }
+  ]
+  

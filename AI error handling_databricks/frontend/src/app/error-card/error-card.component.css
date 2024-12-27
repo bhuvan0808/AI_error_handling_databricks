@@ -1,0 +1,30 @@
+.card {
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  button {
+    margin-top: 16px;
+  }
+  .error-container {
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto;  /* Enable vertical scrolling */
+  }
+  
+  .error-item {
+    margin-bottom: 10px; /* Space between cards */
+  }
+  
+  

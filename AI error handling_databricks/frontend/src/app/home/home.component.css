@@ -1,0 +1,152 @@
+.dashboard-wrapper {
+  background-color: #88d4e3;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 950px;
+  margin: 50px auto;
+  position: relative;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  justify-content: start; /* Align items to the start (left) */
+  align-content: start;
+  min-height: 100vh;
+  padding: 10px;
+}
+
+.dashboard-item {
+  padding: 10px;
+}
+
+.custom-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  max-width: 500px ; /* Apply the !important flag here */
+  max-height: 500px ; /* Add max-height with !important if needed */
+}
+
+/* Define keyframes for gradual color fill animation */
+@keyframes fillGreen {
+  0% { background-color: transparent; }
+  100% { background-color: #33b150; }
+}
+
+@keyframes fillRed {
+  0% { background-color: transparent; }
+  100% { background-color: #c43844; }
+}
+
+.card-success {
+  background-color: #33b150; /* Default to green after animation */
+}
+
+.card-failed {
+  background-color: #c43844; /* Default to red after animation */
+}
+
+.custom-card-header {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.custom-card-content {
+  font-size: 14px;
+}
+
+.custom-card-details {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.custom-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.custom-card:hover .custom-card-details {
+  display: block;
+}
+
+/* Adjust the button-container to be placed directly below the cards */
+.button-container {
+  display: flex;
+  gap: 8px; /* Space between buttons */
+  margin-top: 200px; /* Space above button container */
+  flex-wrap: wrap; /* Ensure buttons wrap if needed */
+}
+
+
+/* General button styling */
+button {
+  background-color: #93bce7;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 120px; /* Adjust button width */
+}
+
+.alert {
+  position: fixed; /* Fixes the alert to the viewport */
+  top: 40px; /* Distance from the top of the viewport */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Offset the element to center */
+  z-index: 9999; /* Ensure it's above other content */
+  padding: 15px;
+  border-radius: 4px;
+  font-size: 50px;
+  width: auto; /* Adjust based on content */
+  max-width: 90%; /* Optional: prevents overflow */
+  text-align: center;
+  
+  /* Background styling */
+  background: rgba(242, 57, 57, 0.7); /* Semi-transparent background */
+  color: #ffffff; /* Text color */
+  
+  /* Box shadow for additional emphasis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  
+  /* Optional border */
+  border: 1px solid #ffffff;
+}
+
+.error-solutions {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.error-solutions h3 {
+  margin-top: 0;
+}
+
+.error-solutions ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.error-solutions li {
+  margin-bottom: 10px;
+}
+.job-input-container{
+  margin-top: 200px;
+}

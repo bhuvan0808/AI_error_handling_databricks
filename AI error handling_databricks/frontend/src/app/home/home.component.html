@@ -1,0 +1,33 @@
+<div class="dashboard-wrapper">
+  <div class="dashboard">
+    <div class="dashboard-item" *ngFor="let card of dashboardCards">
+      <mat-card #card class="custom-card" [ngClass]="isColorChanged ? getCardColor(card.task.state.result_state) : ''"
+        (click)="openDialog(card.task)">
+        <mat-card-header>
+          <h2>{{ card.title }}</h2>
+        </mat-card-header>
+        <mat-card-content>
+        </mat-card-content>
+      </mat-card>
+    </div>
+
+    <div class="job-input-container">
+      <form id="jobForm" action="" method="GET" target="_self" (submit)="handleSubmit($event)">
+        <label for="jobId"></label>
+        <input type="text" id="jobId" name="job_id" placeholder="Enter Job ID" required>
+
+        <div class="execute-btn-container">
+          <button type="submit" (click)="changeCardColors()">Execute</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="button-container">
+      <button mat-raised-button color="primary" class="mov1" (click)="checkPath()">Check Path</button>
+      <button mat-raised-button color="primary" class="mov1" [disabled]="!isRetryEnabled" (click)="retryWorkflow()">Retry</button>
+      <button mat-raised-button color="primary" class="mov2" (click)="viewDetail()">Detail</button>
+      <button mat-raised-button color="primary" class="mov3" (click)="loadCheckFixComponent()">Check fix</button>
+    </div>
+    <ng-container #dynamicComponentContainer></ng-container>
+  </div>
+</div>

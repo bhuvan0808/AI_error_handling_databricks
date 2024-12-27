@@ -1,0 +1,14 @@
+<h2>Error Details</h2>
+<div class="error-container">
+  <mat-card *ngFor="let error of data.error_traces" class="error-item">
+    <mat-card-header>
+      <mat-card-title>Task Run ID: {{ error.task_run_id }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>Error Trace: {{ error.error_trace }}</p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button (click)="dialogRef.close()">Close</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

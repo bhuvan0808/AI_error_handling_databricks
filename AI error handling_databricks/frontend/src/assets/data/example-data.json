@@ -1,0 +1,65 @@
+{
+    "dag": {
+      "dag_id": "data-pipeline", //job_id
+      //"dag_name": "Data Pipeline DAG", 
+      "status": "RUNNING", //result_state
+     // "start_time": "2024-09-11T08:00:00Z",
+      //"end_time": null,
+      //"schedule_interval": "daily",
+      //"privilege":"user",
+      "tasks": [ //task_logs
+        {
+          "task_id": "task1", //task_key
+          //"task_name": "Extract Data", 
+          "status": "SUCCESS",//should be in state
+          //"start_time": "2024-09-11T08:05:00Z",
+          //"end_time": "2024-09-11T08:15:00Z",
+          "details": { //state
+            "error_message": "Data extraction completed successfully" //state_message
+            //error_trace to be added
+          }
+        },
+        {
+          "task_id": "task2",
+          "task_name": "Transform Data",
+          "status": "SUCCESS",
+          "start_time": "2024-09-11T08:20:00Z",
+          "end_time": "2024-09-11T08:40:00Z",
+          "details": {
+            "error_message": "Data transformation completed successfully"
+          }
+        },
+        {
+          "task_id": "task3",
+          "task_name": "Load Data",
+          "status": "SUCCESS",
+          "start_time": "2024-09-11T08:45:00Z",
+          "end_time": "2024-09-11T09:00:00Z",
+          "details": {
+            "error_message": "Data loaded into the database successfully"
+          }
+        },
+        {
+          "task_id": "task4",
+          "task_name": "Send Notification",
+          "status": "FAILED",
+          "start_time": "2024-09-11T09:05:00Z",
+          "end_time": "2024-09-11T09:10:00Z",
+          "details": {
+            "error_message": "Failed to send notification due to network issues"
+          }
+        },
+        {
+          "task_id": "task5",
+          "task_name": "Generate Report",
+          "status": "FAILED",
+          "start_time": "2024-09-11T09:15:00Z",
+          "end_time": "2024-09-11T09:30:00Z",
+          "details": {
+            "error_message": "Report generation failed due to data format error"
+          }
+        }
+      ]
+    }
+  }
+  

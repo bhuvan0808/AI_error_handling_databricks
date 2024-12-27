@@ -1,0 +1,57 @@
+{
+  "status": "INTERNAL_ERROR",
+  "run_id": 961234646772038,
+  "result_state": "FAILED",
+  "task_logs": [
+    {
+      "task_key": "t1",
+      "task_run_id": 344927148926208,
+      "output": "No output",
+      "state": {
+        "result_state": "SUCCESS",
+        "state_message": "",
+        "error_trace": "No error trace available"
+      }
+    },
+    {
+      "task_key": "t3",
+      "task_run_id": 679795394105083,
+      "output": "No output",
+      "state": {
+        "result_state": "FAILED",
+        "state_message": "Workload failed, see run output for details",
+        "error_trace": "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)\nFile \u001b[0;32m<command-1892387817688993>, line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m ptintt(\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mhello\u001b[39m\u001b[38;5;124m\"\u001b[39m)\n\n\u001b[0;31mNameError\u001b[0m: name 'ptintt' is not defined"
+      }
+    },
+    {
+      "task_key": "t2",
+      "task_run_id": 77678613610375,
+      "output": "No output",
+      "state": {
+        "result_state": "SUCCESS",
+        "state_message": "",
+        "error_trace": "No error trace available"
+      }
+    },
+    {
+      "task_key": "t5",
+      "task_run_id": 899919172385140,
+      "output": "No output",
+      "state": {
+        "result_state": "UPSTREAM_FAILED",
+        "state_message": "An upstream task failed.",
+        "error_trace": "No error trace available"
+      }
+    },
+    {
+      "task_key": "t4",
+      "task_run_id": 10566742870010,
+      "output": "No output",
+      "state": {
+        "result_state": "SUCCESS",
+        "state_message": "",
+        "error_trace": "No error trace available"
+      }
+    }
+  ]
+}
